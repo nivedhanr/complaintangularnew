@@ -24,6 +24,10 @@ const myRoute:Routes=[
   {
     path:"userreg",
     component:UserregComponent
+  },
+  {
+    path:"viewprofile",
+    component:ViewprofileComponent
   }
 ]
 @NgModule({
