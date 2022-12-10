@@ -11,10 +11,19 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { UserregComponent } from './userreg/userreg.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UsernavbarComponent } from './usernavbar/usernavbar.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 const myRoute:Routes=[
   {
     path:"",
     component:AdminloginComponent
+  },
+  {
+    path:"userlogin",
+    component:UserloginComponent
+  },
+  {
+    path:"userreg",
+    component:UserregComponent
   }
 ]
 @NgModule({
@@ -24,7 +33,8 @@ const myRoute:Routes=[
     UserloginComponent,
     UserregComponent,
     NavbarComponent,
-    UsernavbarComponent
+    UsernavbarComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,
