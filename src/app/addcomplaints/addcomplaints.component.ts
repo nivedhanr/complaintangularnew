@@ -7,12 +7,13 @@ import { ApiService } from '../api.service';
   styleUrls: ['./addcomplaints.component.css']
 })
 export class AddcomplaintsComponent {
-complaints=""
+
 constructor(private api:ApiService){}
+complaints=""
 readValue=()=>{
   let data:any={
     "userid": localStorage.getItem("userinfo"),
-    "complaint": this.complaints
+    "complaints": this.complaints
   }
   this.api.addcomplaints(data).subscribe(
     (response:any)=>{

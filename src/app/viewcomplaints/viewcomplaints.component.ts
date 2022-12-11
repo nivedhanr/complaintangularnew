@@ -7,6 +7,7 @@ import { ApiService } from '../api.service';
   styleUrls: ['./viewcomplaints.component.css']
 })
 export class ViewcomplaintsComponent {
+  
   userId:any=""
   constructor(private api:ApiService){
     this.userId=localStorage.getItem("userinfo")
