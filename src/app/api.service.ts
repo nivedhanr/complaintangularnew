@@ -15,5 +15,11 @@ export class ApiService {
   getProfileDetails=(datatosend:any)=>{
     return this.http.post("http://localhost:8080/getUserById",datatosend)
   }
+  addcomplaints=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/addcomplaint",datatosend)
+  }
+  viewcomplaints=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/viewallcomplaint",datatosend)
+  }
   
 }
